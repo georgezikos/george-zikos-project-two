@@ -14,6 +14,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 /* White = #F6F6F6 or rgb(246, 246, 246)
 Black = #2E2E2E or rgb(46, 46, 46)
 Black Offset = #333333 or rgb(51, 51, 51)
+Footer Black = #252525
 Grey = #999999 or rgb(153, 153, 153)
 Green = #64A604
 Pink = #DC1570
@@ -101,7 +102,8 @@ footer h2 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 1.8rem;
-    line-height: 2.4rem;
+    /* Other H2 line-height */
+    /* line-height: 2.4rem;  */
     letter-spacing: 0.05rem;
 }
 
@@ -114,32 +116,34 @@ blockquote {
     letter-spacing: 0.06rem;
 }
 
-/* Nav Styles */
-header nav {
+/* Header Styles */
+.main-header__h1 {
+    color: #2E2E2E;
+}
+
+.main-header__nav {
     display: flex;
     align-items: center;
     height: 80px;
     justify-content: space-between;
-    /* padding-left: 50px;
-    padding-right: 50px; */
 }
 
-nav ul {
+.main-header__nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 55%;
-    min-width: 664px;
+    min-width: 800px;
     border: 1px red solid;
     height: 100%;
 }
 
-nav li:last-child {
+.main-header__nav li:last-child {
     position: relative;
     right: 40px;
 }
 
-nav a {
+.main-header__nav a {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 1.8rem;
@@ -150,12 +154,7 @@ nav a {
     color: #333333;
 }
 
-i {
-    border: 1px red solid;
-    margin: 0;
-}
-
-.__shopping-cart {
+.nav__cart-amount {
     position: relative;
     right: 38px;
     top: 10px;
@@ -165,22 +164,59 @@ i {
     width: 20px;
     height: 20px;
     background-color: #64A604;
-    padding: 0;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    z-index: 1;
 }
 
-.__shopping-cart p {
+.nav__cart-amount p {
     display: inline;
     line-height: 0;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 1rem;
-    text-transform: uppercase;
     text-decoration: none;
     color: #F6F6F6;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #333333;
+    border: 1px red solid;
+    text-align: left;
+    padding-top: 100px;
+}
+
+.main-footer__flex-container {
+    display: flex;
+    height: 360px;
+
+}
+
+.main-footer__flex-child {
+    border: 1px red solid;
+    height: 100%;
+    width: calc(100% / 3)
+}
+
+.main-footer h2,
+.main-footer h3 {
+    text-transform: uppercase;
+}
+
+.main-footer__copyright {
+    height: 40px;
+    border: 1px red solid;
+    background-color: #252525;
+}
+
+.footer-wrapper {
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+main {
+    height: 80vh;
 }
