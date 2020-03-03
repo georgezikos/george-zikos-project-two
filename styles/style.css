@@ -50,6 +50,7 @@ body {
 h1,
 h2,
 h3 {
+    text-transform: uppercase;
     margin: 0;
 }
 
@@ -57,11 +58,18 @@ h1 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 4.6rem;
+    font-size: calc(15.76px + 1.8vw);
     line-height: 2.4rem;
     letter-spacing: 0.11rem;
-    text-transform: uppercase;
+    color: #2E2E2E;
+    text-align: left;
     border: solid red 1px;
-    margin-right: 40px;
+}
+
+@media (min-width: 1680px) {
+    h1 {
+        font-size: 4.6rem;
+    }
 }
 
 p {
@@ -80,10 +88,16 @@ img {
     display: block;
 }
 
-.wrapper {
-    max-width: 1680px;
-    width: 90%;
-    margin: 0 auto;
+address {
+    font-style: normal;
+}
+
+main,
+section {
+    background: #1abc9c;
+    border: 5px solid #16a085;
+    border-radius: 5px;
+    flex: 0 1 auto;
 }
 
 nav {
@@ -91,21 +105,13 @@ nav {
 }
 
 footer {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: 'Lora', Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 4.4rem;
     letter-spacing: 0.03rem;
 }
 
-footer h2 {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 1.8rem;
-    /* Other H2 line-height */
-    /* line-height: 2.4rem;  */
-    letter-spacing: 0.05rem;
-}
 
 blockquote {
     font-family: 'Lora', Georgia, Times, 'Times New Roman', serif;
@@ -116,16 +122,42 @@ blockquote {
     letter-spacing: 0.06rem;
 }
 
-/* Header Styles */
-.main-header__h1 {
-    color: #2E2E2E;
+footer h2,
+footer h3 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem; 
+    letter-spacing: 0.05rem;
+    margin-bottom: 20px;
 }
 
+footer h2 {
+    color: #64A604;
+}
+
+footer h3 {
+    color: #F6F6F6;
+}
+
+/* Utility Classes */
+.wrapper {
+    max-width: 1680px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
 .main-header__nav {
     display: flex;
     align-items: center;
     height: 80px;
     justify-content: space-between;
+}
+
+.main-header__logo {
+    margin-right: 40px;
+    border: 1px red solid;
 }
 
 .main-header__nav ul {
@@ -135,10 +167,13 @@ blockquote {
     justify-content: space-between;
     width: 55%;
     min-width: 800px;
-    border: 1px red solid;
     height: 100%;
+    border: 1px red solid;
 }
 
+.main-header__nav li {
+    border: 1px red solid;
+}
 
 .main-header__nav a {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -151,7 +186,6 @@ blockquote {
     color: #333333;
 }
 
-/* Play around with manipulating the size of this element as the menu scales horizontally */
 .nav__cart-amount {
     position: absolute;
     right: 41px;
@@ -170,8 +204,7 @@ blockquote {
 }
 
 .nav__cart-amount span {
-    display: inline;
-    line-height: 0;
+    line-height: 1;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 1rem;
@@ -182,39 +215,61 @@ blockquote {
 /* Footer Styles */
 .main-footer {
     background-color: #333333;
-    border: 1px red solid;
     text-align: left;
     padding-top: 100px;
+    color: #999999;
+    border: 1px red solid;
 }
 
-.main-footer__flex-container {
+.main-footer__container {
     display: flex;
-    height: 360px;
-
-}
-
-.main-footer__flex-item {
-    border: 1px red solid;
-    height: 100%;
-    width: calc(100% / 3)
-}
-
-.main-footer h2,
-.main-footer h3 {
-    text-transform: uppercase;
-}
-
-.main-footer__copyright {
-    height: 40px;
-    border: 1px red solid;
-    background-color: #252525;
-}
-
-.footer-wrapper {
+    flex-wrap: wrap;
     max-width: 1030px;
     margin: 0 auto;
 }
 
-main {
-    height: 80vh;
+.main-footer__column {
+    flex: 1 1 calc(1030px / 3);
+    border: 1px red solid;
+}
+
+.column--recent-posts li,
+.column--contact p {
+    border-bottom: 1px solid #474747;
+}
+
+.column--recent-posts li:last-child,
+.column--contact li:last-child {
+    border-bottom: none;
+}
+
+.column--contact span {
+    display: block;
+}
+
+.column--opt-in ul {
+    border-top: 1px solid #474747;
+}
+
+.column--opt-in li {
+    display: inline-block;
+    border: 1px red solid;
+}
+
+.main-footer__copyright {
+    height: 40px;
+    background-color: #252525;
+    border: 1px red solid;
+}
+
+.copyright__container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.copyright__container p {
+    line-height: 1;
+    margin: auto 0;
+    border: 1px solid red;
 }
