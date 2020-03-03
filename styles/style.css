@@ -61,7 +61,7 @@ h1 {
     letter-spacing: 0.11rem;
     text-transform: uppercase;
     border: solid red 1px;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 p {
@@ -129,6 +129,7 @@ blockquote {
 }
 
 .main-header__nav ul {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -138,10 +139,6 @@ blockquote {
     height: 100%;
 }
 
-.main-header__nav li:last-child {
-    position: relative;
-    right: 40px;
-}
 
 .main-header__nav a {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -154,10 +151,11 @@ blockquote {
     color: #333333;
 }
 
+/* Play around with manipulating the size of this element as the menu scales horizontally */
 .nav__cart-amount {
-    position: relative;
-    right: 38px;
-    top: 10px;
+    position: absolute;
+    right: 41px;
+    top: 37px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +169,7 @@ blockquote {
     -o-border-radius: 50%;
 }
 
-.nav__cart-amount p {
+.nav__cart-amount span {
     display: inline;
     line-height: 0;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -195,7 +193,7 @@ blockquote {
 
 }
 
-.main-footer__flex-child {
+.main-footer__flex-item {
     border: 1px red solid;
     height: 100%;
     width: calc(100% / 3)
