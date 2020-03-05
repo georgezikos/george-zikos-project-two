@@ -152,6 +152,10 @@ footer h3 {
 }
 
 /* Header Styles */
+.main-header {
+    height: 90vh;
+}
+
 .main-header__nav {
     display: flex;
     align-items: center;
@@ -214,6 +218,66 @@ footer h3 {
     font-size: 1rem;
     text-decoration: none;
     color: #F6F6F6;
+}
+
+/* Main Styles */
+.recipes-section {
+    /* height: 90vh; */
+}
+.recipes-section__row-1,
+.recipes-section__row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    height: 50%;
+    height: 600px;
+}
+
+.row-1__copy,
+.row-1__img,
+.row-2__copy,
+.row-2__img {
+    flex: 1 1 494px;
+    border: 1px solid red;
+}
+
+/* Restaurants Styles */
+.restaurants-section {
+    height: 60vh;
+}
+
+.restaurants-section__container {
+    margin: 0 auto;
+    height: 100%;
+    width: 50%;
+    border: 1px solid red;
+}
+
+/* Gallery Section */
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 80vh; */
+    /* width: 1680px; */
+}
+
+.gallery-section__image {
+    height: 50%;
+    flex: 1 1 calc(1670px / 3);
+    border: 1px solid red;
+    height: 400px;
+}
+
+/* Reviews Styles */
+.reviews-section {
+    height: 60vh;
+}
+
+.reviews-section__container {
+    margin: 0 auto;
+    height: 100%;
+    width: 50%;
+    border: 1px solid red;
 }
 
 /* Footer Styles */
