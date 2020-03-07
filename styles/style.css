@@ -92,16 +92,6 @@ address {
     font-style: normal;
 }
 
-section {
-    background: #1abc9c;
-    border: 5px solid #16a085;
-    border-radius: 5px;
-    flex: 0 1 auto;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
-}
 
 nav {
     border: solid red 1px;
@@ -156,7 +146,7 @@ footer h3 {
     min-height: 600px;
     background-image: url('../assets/home-1.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -179,19 +169,20 @@ footer h3 {
     align-items: center;
     justify-content: space-between;
     width: 55%;
-    min-width: 800px;
+    min-width: 600px;
     height: 100%;
     border: 1px red solid;
 }
 
 .main-header__nav li {
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 
 .main-header__nav a {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 1.8rem;
+    font-size: calc(7.92px + 0.6vw);
     line-height: 3.6rem;
     letter-spacing: 0.06rem;
     text-transform: uppercase;
@@ -203,12 +194,15 @@ footer h3 {
 /* Try translate instead of pos-ab */
 .nav__cart-amount {
     position: absolute;
-    right: 41px;
-    top: 37px;
+    /* right: 41px; */
+    /* right: 5%; */
+    /* top: 37px; */
+    /* top: 49%; */
+    transform: translateY(-18px) translateX(12px);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20px;
+    width: 2rem; /* 20px; */
     height: 20px;
     background-color: #64A604;
     border-radius: 50%;
@@ -250,6 +244,7 @@ footer h3 {
 .row-2__copy,
 .row-2__img {
     flex: 1 1 494px;
+    flex: 1 1 364px;
 }
 
 .row-1__copy,
@@ -265,45 +260,59 @@ footer h3 {
 
 /* Restaurants Styles */
 .restaurants-section {
-    height: 60vh;
+    padding: 200px 0;
 }
-
 .restaurants-section__container {
+    /* position: relative; */
     margin: 0 auto;
-    height: 100%;
     width: 50%;
     border: 1px solid red;
 }
 
-.restaurants-section__img {
+.restaurants-section__image {
+    position: relative;
+    border: 1px solid red;
+    width: 100%;
     margin: 0 auto;
 }
 
-.restaurants-section__img img:after {
-    content: '';
-    background-color: crimson;
-    width: 100px;
-    height: 100px;
+.section__img {
+    object-fit: cover;
+    width: 100%;
 }
+
+.logo__img {
+    width: 25%;
+    position: absolute;
+    top: -20%;
+    right: -10%;
+}
+
 
 /* Gallery Section */
 .gallery-section {
     display: flex;
     flex-wrap: wrap;
-    /* height: 80vh; */
-    /* width: 1680px; */
+    /* height: 80vh;
+    width: 1680px; */
 }
 
 .gallery-section__image {
     height: 50%;
-    flex: 1 1 calc(1670px / 3);
+    flex: 1 1 calc(1360px / 3);
     border: 1px solid red;
-    height: 400px;
+    /* height: 400px; */
+}
+
+.gallery-section__image img {
+    object-fit: cover;
+    width: 100%;
 }
 
 /* Reviews Styles */
 .reviews-section {
     height: 60vh;
+    background-color: #DDED9A;
 }
 
 .reviews-section__container {
