@@ -148,10 +148,9 @@ blockquote {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-@media (min-width: 2000px) {
+@media (min-width: 4600px) {
     .main-header {
-        height: 70vh;
+        height: 20vh;
     }
 }
 
@@ -161,9 +160,29 @@ blockquote {
     }
 }
 
-@media (min-width: 4600px) {
+@media (min-width: 2000px) {
     .main-header {
-        height: 20vh;
+        height: 70vh;
+    }
+}
+
+@media (max-width: 940px) {
+    .main-header {
+        background-size: auto 90vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header {
+        height: 80vh;
+        background-size: auto 80vh;
+    }
+}
+
+@media (max-width: 350px) {
+    .main-header {
+        height: 60vh;
+        background-size: auto 70vh;
     }
 }
 
@@ -172,6 +191,7 @@ blockquote {
     align-items: center;
     height: 90px;
     justify-content: space-between;
+    border: 1px solid red;
 }
 
 @media (max-width: 1680px) {
@@ -188,6 +208,25 @@ blockquote {
     width: 44%;
     min-width: 600px;
     height: 100%;
+    border: 1px solid red;
+}
+
+.main-header__nav .fa-bars {
+    display: none;
+    font-size: 2.8rem;
+}
+
+@media (max-width: 940px) {
+    .main-header__nav ul {
+        height: 0;
+        overflow: hidden;
+        min-width: 0;
+    }
+
+    .main-header__nav .fa-bars {
+        display: inline-block;
+        font-size: calc(15px + 1.78vw);
+    }
 }
 
 .main-header__nav a {
