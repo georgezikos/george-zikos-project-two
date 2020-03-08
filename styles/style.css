@@ -465,7 +465,7 @@ blockquote {
 
 /* Restaurants Section Styles */
 .restaurants-section {
-    padding: 230px 0 130px;
+    padding: 13.8% 0 8%;
 }
 
 .restaurants-section__container {
@@ -498,6 +498,53 @@ blockquote {
     font-weight: 400;
     color: #999999;
     width: 70%;
+}
+
+@media (max-width: 1485px) {
+    .restaurants-section__container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 987px) {
+    .restaurants-section {
+        padding: 25% 0 8%;
+    }
+
+    .restaurants-section__container {
+        width: 80%;
+    }
+
+    .restaurants-section__image-logo {
+        width: 75%;
+    }
+
+    .p--restaurants {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .restaurants-section__container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 655px) {
+    .restaurants-section__container {
+        width: 100%;
+    }
+
+    .restaurants-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .p--restaurants {
+        width: 100%;
+    }
 }
 
 /* Gallery Section */
