@@ -1,8 +1,23 @@
-/* Home – Main Styles */
-.recipes-section {
+/* Home Page Styles */
+.main-body {
     font-size: 1.2rem;
     font-weight: 400;
     color: #6a6a6a;
+}
+
+.main-body--dark {
+    color: #2E2E2E;
+}
+
+.main-body--light {
+    color: #999999;
+}
+
+.main-body--inline {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #2E2E2E;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .recipes-section img {
@@ -32,7 +47,7 @@
     flex: 1 1 494px;
 }
 
-.row-1__copy p {
+.row-1__copy .main-body {
     margin: 45px auto;
     width: 82%;
 }
@@ -47,7 +62,7 @@
     padding: 0 5%;
 }
 
-.row-2__copy h3 {
+.row-2__copy .third-heading {
     margin-bottom: 8px;
     color: #2E2E2E;
 }
@@ -104,76 +119,312 @@
     color: #F6F6F6;
 }
 
-/* Blog – Main Section Styles */
+/* Blog Page Styles */
 .blog-section {
-    // height: 100vh;
+    padding-top: 10.15%;
+    text-align: left;
+    width: 61%;
 }
 
-.blog-section__post,
-.blog-section__author,
-.blog-section__related,
-.blog-section__comments {
-    height: 25%;
-    border: 1px solid red;
+.main-body--blog {
+    margin-bottom: 20px;
+}
+
+.blog-section__post {
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+}
+
+.blog-section__post .secondary-heading {
+    text-align: left;
+}
+
+.secondary-heading--blog {
+    text-align: left;
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.secondary-heading--blog-head {
+    margin-bottom: 5px;
+    font-size: calc(15px + 0.95vw);
+    // original font-size is 31px
+    line-height: 1;
+}
+
+.post__who-what-where {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #333333;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.post__social-share {
+    padding-top: 28px;
+    margin-top: 30px;
+}
+
+.post__social-share li {
+    float: left;
+    margin-right: 17px;
+    padding-top: 0px;
+    font-size: 1.6rem;
+    color: #999999;
+}
+
+.post__social-share a {
+    color: #999999;
+}
+
+.social-share__links {
+    display: flex;
+    align-items: stretch;
+    margin-top: 10px;
+}
+
+.social-share__links ul {
+    margin-left: 20px;
 }
 
 .blog-section__author {
     display: flex;
-}
-
-.author__profile-img,
-.author__desc {
-    height: 100%;
-    border: 1px solid red;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .author__profile-img {
-    flex: 1 1 auto;
+    margin-right: 28px;
+}
+
+.author__profile-img {
+    width: 15%;
 }
 
 .author__profile-img img {
     object-fit: cover;
-    width: 100%;
+    height: 100%;
 }
 
 .author__desc {
-    flex: 5 2 auto;
+    width: calc(85% - 28px);
+    background-color: rgba(153, 153, 153, 0.1);
+    padding: 32px 35px;
+
 }
 
 .blog-section__related {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.third-heading--blog {
+    font-size: 1.5rem;
+    color: #333333;
+    letter-spacing: 0.06rem;
+    margin-bottom: 0;
+}
+
+.related__posts-container {
     display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .related__post {
     height: 100%;
-    border: 1px solid red;
-    width: calc(100% / 3);
+    width: calc((100% - 48px) / 3);
+}
+
+.related__post p { 
+    font-size: 1rem;
+}
+
+.post--2 {
+    margin: 0 24px;
 }
 
 .related__post img {
     object-fit: cover;
     width: 100%;
+    margin-bottom: 22px;
+}
+
+.blog-section__comments {
+    width: 61%;
+    padding-bottom: 10.15%;
+    text-align: left;
+}
+
+.comment__auth {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #2E2E2E;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.comment__role {
+    font-family: 'Lora', Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 1.05rem;
 }
 
 .comments__new {
     display: flex;
     height: 50%;
-    border: 1px solid red;
+    margin-bottom: 25px;
 }
 
 .new__profile-img {
-    flex: 1 1 auto;
-    border: 1px solid red;
+    flex: 1 1 calc(8% - 25px);
+    margin-right: 25px;
 }
 
 .new__profile-img img {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    // height: 100%;
 }
 
 .new__comment {
-    flex: 5 2 auto;
+    flex: 5 2 calc(92% - 25px);
+    // border: 1px solid red;
+    background-color: rgba(153, 153, 153, 0.1);
+    padding: 10px 15px;
+}
+.new--1 {
+    margin-top: 30px;
+}
+.new--2 {
+    margin-bottom: 32px;
+}
+
+.new__comment {
+    position: relative;
+}
+
+.new__comment:before {
+    content: '◀︎';
+    font-size: 1.6rem;
+    position: absolute;
+    left: -12.8px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: rgba(153, 153, 153, 0.1);
+}
+
+.comments__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.comments__form label {
+    width: 100%;
+}
+
+.comments__name,
+.comments__email,
+.comments__website {
+    width: calc((100% - 50px) / 3);
+}
+
+.comments__email {
+    margin: 0 25px;
+}
+
+.comments__form button {
+    width: 100%;
+}
+
+.comments__form label {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.comments__form input,
+.comments__comment {
+    height: 44px;
+    padding: 16px 15px;
+    border: 1px solid rgba(153, 153, 153, 0.2);
+    display: block;
+    // background-color: #535353;
+    font-family: 'Lora', Georgia, Times, 'Times New Roman', serif;
+    color: #999999;
+}
+
+.comments__form input::placeholder {
+    font-family: 'Lora', Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.12rem;
+    color: #999999;
+    opacity: 1;
+    line-height: 1;
+}
+
+.comments__comment {
+    margin: 15px 0;
+    width: 100%;
+    height: 10%;
+}
+
+.comments__comment::placeholder {
+    font-family: 'Lora', Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.12rem;
+    color: #999999;
+    opacity: 1;
+    line-height: 1;
+}
+
+.comments__form button {
+    height: 54px;
+    padding: 10px 13px;
+    width: 17%;
+    min-width: 174.2px;
+    border: none;
+}
+
+.comments__form-container h2 {
+    margin-bottom: 0;
+}
+
+/* Contact Page */
+.contact__pre-footer {
+    background-image: url('../assets/contact-2.jpeg');
+    height: 55vh;
+    min-height: 400px;
+    background-size: 1680px auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.contact-section {
+    height: 55vh;
+    display: flex;
+}
+
+.contact-section h2 {
     border: 1px solid red;
 }
 
+.drop-line,
+.contact-details {
+    height: 100%;
+    border: 1px solid red;
+}
+
+.drop-line {
+    width: 60%;
+}
+
+.contact-details {
+    width: 40%;
+    background-color: rgba(153, 153, 153, 0.1);
+}

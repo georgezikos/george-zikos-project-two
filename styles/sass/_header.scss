@@ -7,14 +7,23 @@
 }
 
 .blog-header {
+    background-image: url('../assets/blog-1.jpeg');
+}
+
+.contact-header {
+    background-image: url('../assets/contact-1.jpeg');
+}
+
+.blog-header,
+.contact-header {
     height: 55vh;
     min-height: 400px;
-    background-image: url('../assets/blog-1.jpeg');
     background-size: 1680px auto;
 }
 
 .main-header,
-.blog-header {
+.blog-header,
+.contact-header {
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
