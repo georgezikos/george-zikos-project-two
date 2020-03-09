@@ -4,6 +4,17 @@
     min-height: 600px;
     background-image: url('../assets/home-1.jpeg');
     background-size: cover;
+}
+
+.blog-header {
+    height: 55vh;
+    min-height: 400px;
+    background-image: url('../assets/blog-1.jpeg');
+    background-size: 1680px auto;
+}
+
+.main-header,
+.blog-header {
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;

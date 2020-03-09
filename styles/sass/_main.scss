@@ -1,4 +1,4 @@
-/* Main Section Styles */
+/* Home – Main Styles */
 .recipes-section {
     font-size: 1.2rem;
     font-weight: 400;
@@ -103,3 +103,77 @@
 .btn a:visited {
     color: #F6F6F6;
 }
+
+/* Blog – Main Section Styles */
+.blog-section {
+    // height: 100vh;
+}
+
+.blog-section__post,
+.blog-section__author,
+.blog-section__related,
+.blog-section__comments {
+    height: 25%;
+    border: 1px solid red;
+}
+
+.blog-section__author {
+    display: flex;
+}
+
+.author__profile-img,
+.author__desc {
+    height: 100%;
+    border: 1px solid red;
+}
+
+.author__profile-img {
+    flex: 1 1 auto;
+}
+
+.author__profile-img img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.author__desc {
+    flex: 5 2 auto;
+}
+
+.blog-section__related {
+    display: flex;
+}
+
+.related__post {
+    height: 100%;
+    border: 1px solid red;
+    width: calc(100% / 3);
+}
+
+.related__post img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.comments__new {
+    display: flex;
+    height: 50%;
+    border: 1px solid red;
+}
+
+.new__profile-img {
+    flex: 1 1 auto;
+    border: 1px solid red;
+}
+
+.new__profile-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.new__comment {
+    flex: 5 2 auto;
+    border: 1px solid red;
+}
+

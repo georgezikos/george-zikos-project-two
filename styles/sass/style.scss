@@ -1,9 +1,14 @@
+// Global Imports
 @import 'setup';
 @import 'global';
 @import 'header';
+@import 'footer';
+
+// Home Page Imports
 @import 'main';
 @import 'restaurants';
 @import 'gallery';
 @import 'reviews';
-@import 'footer';
+
+// Media Queries
 @import 'media-queries'
