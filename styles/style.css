@@ -147,7 +147,6 @@ footer {
     align-items: center;
     height: 90px;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 .main-header__nav ul {
@@ -158,7 +157,6 @@ footer {
     width: 44%;
     min-width: 600px;
     height: 100%;
-    border: 1px solid red;
 }
 
 .main-header__nav .fa-bars {
@@ -201,9 +199,9 @@ footer {
 }
 
 /* Header Media Queries */
-@media (min-width: 4600px) {
+@media (min-width: 2000px) {
     .main-header {
-        height: 20vh;
+        height: 70vh;
     }
 }
 
@@ -213,9 +211,9 @@ footer {
     }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 4600px) {
     .main-header {
-        height: 70vh;
+        height: 20vh;
     }
 }
 
@@ -434,10 +432,6 @@ footer {
 }
 
 /* Restaurants Section Styles */
-.restaurants-section {
-    padding: 13.8% 0 8%;
-}
-
 .restaurants-section__container {
     margin: 0 auto;
     width: 50%;
@@ -471,6 +465,18 @@ footer {
 }
 
 /* Restaurants Media Queries */
+@media (min-width: 1680px) {
+    .restaurants-section {
+        padding: 5% 0;
+    }
+}
+
+@media (max-width: 1680px) {
+    .restaurants-section {
+        padding: 13.8% 0 8%;
+    }
+}
+
 @media (max-width: 1485px) {
     .restaurants-section__container {
         width: 70%;
@@ -537,7 +543,6 @@ footer {
 /* Reviews Section Styles */
 .reviews-section {
     background-color: #DDED9A;
-    padding: 9% 0 8%;
 }
 
 .reviews-section__container {
@@ -598,6 +603,28 @@ blockquote {
 }
 
 /* Reviews Section Media Queries */
+@media (min-width: 1680px) {
+    .reviews-section {
+        padding: 5% 0;
+    }
+
+    blockquote {
+        font-size: 2rem;
+        padding: 0 25%;
+    }
+}
+
+@media (max-width: 1680px) {
+    .reviews-section {
+        padding: 9% 0 8%;
+    }
+}
+
+    blockquote {
+        padding: 0;
+    }
+}
+
 @media (max-width: 987px) {
     .reviews-section {
         padding-left: 5%;
@@ -654,7 +681,7 @@ blockquote {
     }
 
     .review-section__review:before {
-        left: -30px;
+        left: -50px;
     }
 
     .review-section__review:after {
@@ -677,8 +704,8 @@ blockquote {
 footer h2 {
     color: #64A604;
     text-align: left;
-    font-size: 3.4rem;
     font-size: calc(18px + 0.955vw);
+    /* font-size base is 34px */
     margin-bottom: 28px;
 }
 
@@ -692,7 +719,6 @@ footer h3 {
 .main-footer {
     background-color: #333333;
     text-align: left;
-    padding-top: 105px;
     color: #999999;
     line-height: 2.11;
     font-size: 1.12rem;
@@ -702,8 +728,9 @@ footer h3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1030px;
+    max-width: 1680px;
     margin: 0 auto;
+    padding: 0 5%;
 }
 
 .main-footer > .main-footer__container {
@@ -825,4 +852,86 @@ footer h3 {
 .container--copyright span {
     color: #64A604;
     text-transform: uppercase;
+}
+
+/* Footer Media Queries */
+@media (min-width: 1680px) {
+    .main-footer {
+        padding-top: 2%;
+    }
+}
+
+@media (max-width: 1680px) {
+    .main-footer {
+        padding-top: 6%;
+    }
+}
+
+@media (min-width: 1680px) {
+    footer h2 {
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-footer {
+        padding-top: 10%;
+    }
+    
+    footer h2 {
+        margin-bottom: 18px;
+    }
+
+    footer h3 {
+        margin-bottom: 28px;
+    }
+
+    .main-footer__column {
+        margin-right: 0;
+    }
+
+    .column--contact {
+        margin-right: 5%;
+    }
+
+    .column--contact,
+    .column--recent-posts {
+        flex: 1 1 45%;
+    }
+
+    .column--opt-in {
+        margin-top: 5%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main-footer {
+        padding-top: 15%;
+    }
+    
+    .column--contact,
+    .column--recent-posts,
+    .column--opt-in {
+        flex: 1 1 100%;
+    }
+
+    .column--contact {
+        margin-right: 0;
+    }
+
+    .column--recent-posts {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .column--recent-posts,
+    .column--opt-in {
+        margin-top: 20%;
+    }
+
+    .container--copyright {
+        justify-content: center;
+    }
 }
