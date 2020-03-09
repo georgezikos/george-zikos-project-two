@@ -1,0 +1,15 @@
+/* Gallery Section */
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-section__image {
+    height: 50%;
+    flex: 1 1 calc(1360px / 3);
+}
+
+.gallery-section__image img {
+    object-fit: cover;
+    width: 100%;
+}

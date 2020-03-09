@@ -1,0 +1,109 @@
+/* Colours */
+/* White = #F6F6F6 or rgb(246, 246, 246)
+Black = #2E2E2E or rgb(46, 46, 46)
+Black Offset = #333333 or rgb(51, 51, 51)
+Footer Black = #252525
+Grey = #999999 or rgb(153, 153, 153)
+Green = #64A604
+Pink = #DC1570
+Light Green = #DDED9A */
+
+/* Breakpoints */
+/* 940px */
+/* 768px */
+/* 480px */
+/* 350px */
+
+/* Global Styles */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lora', Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.03rem;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: calc(15px + 1.5vw);
+    /* font-size starts at 46px */
+    line-height: 2.8rem;
+    letter-spacing: 0.11rem;
+    color: #2E2E2E;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: calc(15px + 0.655vw);
+    /* font-size starts at 26px */
+    line-height: 2.8rem;
+    letter-spacing: 0.11rem;
+    color: #2E2E2E;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.4rem; 
+    letter-spacing: 0.05rem;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+address {
+    font-style: normal;
+}
+
+footer {
+    font-family: 'Lora', Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 4.4rem;
+    letter-spacing: 0.03rem;
+}
+
+/* Utility Classes */
+.wrapper {
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.border-bottom--header {
+    margin: 0 auto;
+    height: 4px;
+    width: 60px;
+    background-color: #64A604;
+}

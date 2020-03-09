@@ -1,0 +1,32 @@
+/* Restaurants Section Styles */
+.restaurants-section__container {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.restaurants-section__image-logo {
+    position: relative;
+    width: 55%;
+    margin: 0 auto 63px;
+}
+
+.section__img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.section__logo {
+    width: 40%;
+    position: absolute;
+    top: -40.5%;
+    right: -15.5%;
+}
+
+.p--restaurants {
+    width: 75%;
+    margin: 23px auto 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #999999;
+    width: 70%;
+}

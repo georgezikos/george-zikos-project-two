@@ -1,0 +1,61 @@
+/* Reviews Section Styles */
+.reviews-section {
+    background-color: #DDED9A;
+}
+
+.reviews-section__container {
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    width: 50%;
+}
+
+blockquote {
+    font-family: 'Lora', Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: calc(15px + 0.3vw);
+    /* font-size starts at 20px */
+    line-height: 3.3rem;
+    letter-spacing: 0.06rem;
+    color: #333333;
+    margin: 40px 0 72px;
+}
+
+.review-section__review:before,
+.review-section__review:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    opacity: 0.6;
+    color: #F6F6F6;
+}
+.review-section__review:before {
+    left: -92px;
+    top: 85px;
+    background-image: url('../assets/quote-left-solid.svg');
+}
+
+.review-section__review:after {
+    right: -105px;
+    bottom: 125px;
+    background-image: url('../assets/quote-right-solid.svg');
+}
+
+.review-section__nav {
+    font-size: 3.2rem;
+    color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    width: 8%;
+}
+
+.fa-angle-left {
+    color: rgba(246, 246, 246, 0.5);
+}
